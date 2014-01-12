@@ -12,7 +12,7 @@
         <java-version>1.6</java-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring_version>3.2.5.RELEASE</spring_version>
-        <hibernate_version>4.2.0.Final</hibernate_version>
+        <hibernate_version>4.2.7.Final</hibernate_version>
         <aspectj_version>1.7.4</aspectj_version>
     </properties>
 
@@ -124,7 +124,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.13</version>
+            <version>5.1.28</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

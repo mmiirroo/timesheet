@@ -27,7 +27,7 @@
                 <a href="employees/${emp.id}">Go to page</a>
             </td>
             <td>
-                <sf:form action="employees/${emp.id}" method="delete"> cssClass="delete"
+                <sf:form action="employees/${emp.id}" method="delete" cssClass="delete">
                     <input type="submit" class="delete-button" value=""/>
                 </sf:form>
             </td>

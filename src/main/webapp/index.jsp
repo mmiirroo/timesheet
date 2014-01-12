@@ -15,6 +15,6 @@
     <li><a href="timesheets">List timesheets</a></li>
 </u1>
 <h2>Also check out <a href="timesheet-service">extra services!</a></h2>
-Today is <fmt:formateDate value="${today}" pattern="yyyy-MM-dd"/>
+Today is <a>${today}</a>
 </body>
 </html>

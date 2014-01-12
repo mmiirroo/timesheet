@@ -57,7 +57,7 @@ public class EmployeeController {
         Employee employee = employeeDao.find(id);
         model.addAttribute("employee", employee);
 
-        return "employee/view";
+        return "employees/view";
     }
 
     @ExceptionHandler(EmployeeDeleteException.class)

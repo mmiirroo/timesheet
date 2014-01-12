@@ -3,11 +3,11 @@
   type="WEB"
   name="timesheet"
   id="myeclipse.1389527123343"
-  context-root="/timesheet"
+  context-root="/timesheet-app"
   j2ee-spec="5.0"
   archive="timesheet.war">
   <attributes>
-    <attribute name="webrootdir" value="src/main/webapp" />
+    <attribute name="webrootdir" value="/src/main/webapp" />
   </attributes>
 </project-module>
 

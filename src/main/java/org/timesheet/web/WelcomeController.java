@@ -1,14 +1,15 @@
 package org.timesheet.web;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.Date;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.timesheet.web.helpers.EntityGenerator;
-
-import javax.annotation.PostConstruct;
-import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,7 +23,7 @@ import java.util.Date;
 @RequestMapping("/welcome")
 public class WelcomeController {
 
-    @Autowired
+    @Resource
     private EntityGenerator entityGenerator;
 
     @RequestMapping(method = RequestMethod.GET)

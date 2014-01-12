@@ -63,7 +63,7 @@ public class ManagerController {
     public String getManager(@PathVariable("id") long id, Model model) {
         Manager manager = managerDao.find(id);
         model.addAttribute("manager", manager);
-        return "manager/view";
+        return "managers/view";
     }
 
     /**
