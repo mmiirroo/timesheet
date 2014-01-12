@@ -1,6 +1,4 @@
-<%@page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
 <head>
@@ -14,7 +12,9 @@
     <li><a href="tasks">List tasks</a></li>
     <li><a href="timesheets">List timesheets</a></li>
 </u1>
-<h2>Also check out <a href="timesheet-service">extra services!</a></h2>
+<h2>Also check out <a href="timesheet-service">extra services!</a></h2><%--
 Today is <fmt:formateDate value="${today}" pattern="yyyy-MM-dd"/>
+    --%>
+<td>Today is: ${today}</td>
 </body>
 </html>
