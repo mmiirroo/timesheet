@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Timesheet Service</title>
-    <link rel="stylesheet" href="/timesheet-app/resources/style.css" type="text/css">
+    <link rel="stylesheet" href="/timesheet/resources/style.css" type="text/css">
 </head>
 <body>
 <h1>Timesheet services</h1>
@@ -18,7 +18,7 @@
     <h3>Busiest task</h3>
     <ul>
         <li>
-            <a href="/timesheet-app/tasks/${busiestTask.id}"
+            <a href="/timesheet/tasks/${busiestTask.id}"
                id="busiest-task">${busiestTask.description}</a>
         </li>
     </ul>
@@ -57,9 +57,9 @@
 </div>
 
 <br/><br/>
-<a href="/timesheet-app/welcome">Go Back</a>
+<a href="/timesheet/welcome">Go Back</a>
 
-<script src="/timesheet-app/resources/jquery-1.7.1.js"></script>
+<script src="/timesheet/resources/jquery-2.0.3.js"></script>
 <script type="text/javascript">
     (function () {
         // set default actions
@@ -77,7 +77,7 @@
         function setAddAction(selectName, formName, action) {
             var id = $(selectName).val();
             $(formName).attr("action",
-                    "/timesheet-app/timesheet-service/" + action + "/" + id);
+                    "/timesheet/timesheet-service/" + action + "/" + id);
         }
     })();
 </script>

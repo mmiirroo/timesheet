@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>Manager page</title>
-    <link rel="stylesheet" href="/timesheet-app/resources/style.css" type="text/css">
+    <link rel="stylesheet" href="/timesheet/resources/style.css" type="text/css">
 </head>
 <body>
 <h2>Manager info</h2>
@@ -27,9 +27,9 @@
 <br/><br/>
 <a href="../managers">Go Back</a>
 
-<script src="/timesheet-app/resources/jquery-1.7.1.js"></script>
+<script src="/timesheet/resources/jquery-2.0.3.js"></script>
 <script>
-    (function () {
+    (function() {
         $("#unlock").on("click", function () {
             $("#unlock").addClass("hidden");
 

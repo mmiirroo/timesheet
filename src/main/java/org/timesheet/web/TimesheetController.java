@@ -49,7 +49,7 @@ public class TimesheetController {
         Timesheet timesheet = timesheetDao.find(id);
         TimesheetCommand tsCommand = new TimesheetCommand(timesheet);
         model.addAttribute("tsCommand", tsCommand);
-        return "timesheet/view";
+        return "timesheets/view";
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.POST)

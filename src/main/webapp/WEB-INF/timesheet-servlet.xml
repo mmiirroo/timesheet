@@ -9,7 +9,7 @@
 
     <import resource="classpath:controllers.xml"/>
     <import resource="classpath:aop.xml"/>
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven />
 
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver">

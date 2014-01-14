@@ -60,7 +60,7 @@ label {
 
 .delete-button {
     border: none;
-    background: url('/timesheet-app/resources/delete.png') no-repeat top left;
+    background: url('/timesheet/resources/delete.png') no-repeat top left;
     color: transparent;
     cursor: pointer;
     padding: 2px 8px;

@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Tasks</title>
-    <link rel="stylesheet" href="/timesheet-app/resources/style.css" type="text/css">
+    <link rel="stylesheet" href="/timesheet/resources/style.css" type="text/css">
 </head>
 <body>
 <h1>List of tasks</h1>
@@ -48,7 +48,7 @@
                 </div>
             </td>
             <td>
-                <a href="tasks/${task.id}">Go to page</a>
+                <a href="tasks/${task.id}">details</a>
             </td>
             <td>
                 <sf:form action="tasks/${task.id}" method="delete" cssClass="delete">

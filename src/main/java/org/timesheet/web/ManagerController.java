@@ -1,5 +1,9 @@
 package org.timesheet.web;
 
+import java.util.List;
+
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -11,9 +15,6 @@ import org.springframework.web.servlet.ModelAndView;
 import org.timesheet.domain.Manager;
 import org.timesheet.service.dao.ManagerDao;
 import org.timesheet.web.exceptions.ManagerDeleteException;
-
-import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * Created with IntelliJ IDEA. User: Administrator Date: 13-12-29 Time: 下午7:41
@@ -92,5 +93,11 @@ public class ManagerController {
         managerDao.add(manager);
 
         return "redirect:/managers";
+    }
+    
+    @RequestMapping(params = "new", method = RequestMethod.GET)
+    public String createManagerForm(Model model) {
+        model.addAttribute("manager", new Manager());
+        return "managers/new";
     }
 }

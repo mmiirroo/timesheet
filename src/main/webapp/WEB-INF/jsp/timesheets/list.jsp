@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Timesheets</title>
-    <link rel="stylesheet" href="/timesheet-app/resources/style.css" type="text/css">
+    <link rel="stylesheet" href="/timesheet/resources/style.css" type="text/css">
 </head>
 <body>
 <h1>List of timesheets</h1>
@@ -33,7 +33,7 @@
             </td>
             <td>${ts.hours}</td>
             <td>
-                <a href="timesheets/${ts.id}">Go to page</a>
+                <a href="timesheets/${ts.id}">details</a>
             </td>
             <td>
                 <sf:form action="timesheets/${ts.id}" method="delete" cssClass="delete">

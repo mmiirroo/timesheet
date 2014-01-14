@@ -7,11 +7,11 @@
 <html>
 <head>
     <title>Employess</title>
-    <link rel="stylesheet" href="/timesheet-app/resources/style.css" type="text/css">
+    <link rel="stylesheet" href="/timesheet/resources/style.css" type="text/css">
 </head>
 <body>
 <h1>List of employees</h1>
-<a href="employee?new">Add new employee</a>
+<a href="employees?new">Add new employee</a>
 <table cellspacing="5" class="main-table">
     <tr>
         <th>Name</th>
@@ -24,7 +24,7 @@
             <td>${emp.name}</td>
             <td>${emp.department}</td>
             <td>
-                <a href="employees/${emp.id}">Go to page</a>
+                <a href="employees/${emp.id}">details</a>
             </td>
             <td>
                 <sf:form action="employees/${emp.id}" method="delete" cssClass="delete">

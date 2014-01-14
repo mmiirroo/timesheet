@@ -16,7 +16,10 @@ public class TimesheetCommand {
     @Range(min = 1, message = "Hours must be 1 or greater")
     private Integer hours;
     private Timesheet timesheet;
-
+    
+    // default c-tor for bean instantiation
+    public TimesheetCommand() {}
+    
     public TimesheetCommand(Timesheet timesheet) {
         hours = timesheet.getHours();
         this.timesheet = timesheet;

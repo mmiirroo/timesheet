@@ -7,7 +7,7 @@
 <html>
 <head>
     <title>Managers</title>
-    <link rel="stylesheet" href="/timesheet-app/resources/style.css" type="text/css">
+    <link rel="stylesheet" href="/timesheet/resources/style.css" type="text/css">
 </head>
 <body>
 <h1>List of managers</h1>
@@ -22,7 +22,7 @@
         <tr>
             <td>${man.name}</td>
             <td>
-                <a href="managers/${man.id}">Go to page</a>
+                <a href="managers/${man.id}">details</a>
             </td>
             <td>
                 <sf:form action="managers/${man.id}" method="delete" cssClass="delete">

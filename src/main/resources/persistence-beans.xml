@@ -56,7 +56,7 @@
                 <prop key="format_sql">true</prop>
 
                 <!-- Drop and re-create the database schema on startup -->
-                <prop key="hbm2ddl.auto">reate</prop>
+                <prop key="hbm2ddl.auto">none</prop>
             </props>
         </property>
         <!--

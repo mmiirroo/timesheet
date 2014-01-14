@@ -8,7 +8,7 @@
 <html>
 <head>
     <title>Task page</title>
-    <link rel="stylesheet" href="/timesheet-app/resources/style.css" type="text/css">
+    <link rel="stylesheet" href="/timesheet/resources/style.css" type="text/css">
 </head>
 <body>
 <h2>Task info</h2>
@@ -36,7 +36,7 @@
                             </td>
                             <td>
                                 <input type="submit" value="Remove" id="remove-${emp.id}"/>
-                                <script src="/timesheet-app/resources/jquery-1.7.1.js"></script>
+                                <script src="/timesheet/resources/jquery-2.0.3.js"></script>
                                 <script type="text/javascript">
                                     $("#remove-${emp.id}").on("click", function () {
                                         $("#remove-${emp.id}").addClass("hidden");
@@ -71,7 +71,7 @@
                         </td>
                         <td>
                             <input type="submit" value="Add" id="add-employee"/>
-                            <script src="/timesheet-app/resources/jquery-1.7.1.js"></script>
+                            <script src="/timesheet/resources/jquery-2.0.3.js"></script>
                             <script type="text/javascript">
                                 $("#add-employee").on("click", function () {
                                     $("#selected-emp").selected().remove();
@@ -88,7 +88,7 @@
 <br/><br/>
 <a href="../tasks">Go Back</a>
 
-<script src="/timesheet-app/resources/jquery-1.7.1.js"></script>
+<script src="/timesheet/resources/jquery-2.0.3.js"></script>
 <script type="text/javascript">
     (function () {
         // prepare default form action
