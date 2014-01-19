@@ -1,4 +1,4 @@
-package org.timesheet.web.helpers;
+package org.timesheet.web.editors;
 
 import org.timesheet.domain.Task;
 import org.timesheet.service.dao.TaskDao;

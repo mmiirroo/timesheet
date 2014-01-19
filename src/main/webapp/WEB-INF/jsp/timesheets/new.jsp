@@ -1,5 +1,5 @@
-<%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 
 <%--@elvariable id="employees" type="java.util.List<org.timesheet.domain.Employee"--%>
 <%--@elvariable id="tasks" type="java.util.List<org.timesheet.domain.Task"--%>

@@ -13,8 +13,8 @@ import org.timesheet.domain.Task;
 import org.timesheet.service.TimesheetService;
 import org.timesheet.service.dao.EmployeeDao;
 import org.timesheet.service.dao.ManagerDao;
+import org.timesheet.web.editors.EmployeeEditor;
 import org.timesheet.web.editors.ManagerEditor;
-import org.timesheet.web.helpers.EmployeeEditor;
 
 import javax.annotation.Resource;
 import java.util.List;

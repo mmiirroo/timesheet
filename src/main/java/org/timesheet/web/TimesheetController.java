@@ -1,21 +1,28 @@
 package org.timesheet.web;
 
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.timesheet.domain.Employee;
+import org.timesheet.domain.Task;
 import org.timesheet.domain.Timesheet;
 import org.timesheet.service.dao.EmployeeDao;
 import org.timesheet.service.dao.TaskDao;
 import org.timesheet.service.dao.TimesheetDao;
 import org.timesheet.web.commands.TimesheetCommand;
-
-import javax.annotation.Resource;
-import javax.validation.Valid;
-import java.util.List;
+import org.timesheet.web.editors.EmployeeEditor;
+import org.timesheet.web.editors.TaskEditor;
 
 /**
  * User: seiyaa
@@ -107,5 +114,11 @@ public class TimesheetController {
     @Resource
     public void setEmployeeDao(EmployeeDao employeeDao) {
         this.employeeDao = employeeDao;
+    }
+    
+    @InitBinder
+    protected void initBinder(WebDataBinder binder) {
+        binder.registerCustomEditor(Employee.class, new EmployeeEditor(employeeDao));
+        binder.registerCustomEditor(Task.class, new TaskEditor(taskDao));
     }
 }

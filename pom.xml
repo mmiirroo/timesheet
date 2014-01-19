@@ -28,7 +28,11 @@
             <artifactId>aspectjtools</artifactId>
             <version>${aspectj_version}</version>
         </dependency>
-
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>1.2.17</version>
+		</dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
