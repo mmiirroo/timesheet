@@ -18,7 +18,10 @@ public class Task {
     private Long id;
 
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "task_employee", joinColumns = {@JoinColumn(name = "task_id")}, inverseJoinColumns = {@JoinColumn(name = "employee_id")})
+    @JoinTable(name = "task_employee",
+            joinColumns = {@JoinColumn(name = "task_id")},
+            inverseJoinColumns = {@JoinColumn(name = "employee_id")}
+    )
     private List<Employee> assignedEmployees = new ArrayList<Employee>();
 
     @OneToOne
