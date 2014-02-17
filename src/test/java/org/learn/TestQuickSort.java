@@ -35,16 +35,16 @@ public class TestQuickSort
             {
                 j--;
             }
-            if(i<j)
+            if (i < j)
                 swap(source, i, j);
-            while ( i < j && source[i].compareTo(source[j]) < 0)
+            while (i < j && source[i].compareTo(source[j]) < 0)
             {
                 i++;
             }
-            if(i<j)
+            if (i < j)
                 swap(source, i, j);
         }
-        
+
         if (start < i - 1)
             quickSort(source, start, i - 1);
         if (i + 1 < end)
