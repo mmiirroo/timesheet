@@ -1,6 +1,6 @@
 /**
  * Project Name:timesheet
- * File Name:UserDefinedFile.java
+ * File Name:FileSizeComparator.java
  * Package Name:org.learn.sort
  * Date:2014-2-18обнГ10:11:56
  * Copyright (c) 2014, https://github.com/seiyaa All Rights Reserved.
@@ -16,9 +16,9 @@ public class FileSizeComparator implements Comparator<File>
     @Override
     public int compare(File file1, File file2)
     {
-        if (file1.length() == ((File) file2).length())
+        if (file1.length() == file2.length())
             return 0;
-        else if (file1.length() > ((File) file2).length())
+        else if (file1.length() > file2.length())
             return -1;
         else
             return 1;
