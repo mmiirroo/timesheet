@@ -12,13 +12,11 @@ import org.junit.Test;
 
 public class TestQuickSort
 {
-    @Test
-    public void testSort()
+    public static <T> void swap(T[] source, int i, int j)
     {
-        Integer[] source = { 4, 2, 1, 5, 6, 8, 3 };
-        quickSort(source, 0, source.length - 1);
-        for (int ii : source)
-            System.out.println(ii);
+        T temp = source[i];
+        source[i] = source[j];
+        source[j] = temp;
     }
 
     public <T extends Comparable<? super T>> void quickSort(T[] source, int start, int end)
@@ -51,10 +49,12 @@ public class TestQuickSort
             quickSort(source, i + 1, end);
     }
 
-    public static <T> void swap(T[] source, int i, int j)
+    @Test
+    public void testSort()
     {
-        T temp = source[i];
-        source[i] = source[j];
-        source[j] = temp;
+        Integer[] source = { 4, 2, 1, 5, 6, 8, 3 };
+        quickSort(source, 0, source.length - 1);
+        for (int ii : source)
+            System.out.println(ii);
     }
 }

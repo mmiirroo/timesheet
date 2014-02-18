@@ -10,40 +10,31 @@ package org.learn;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
 public class FileUtil
 {
-  public static List<File> listAllFiles(String path)
-  {
-    LinkedList<String> folderList = new LinkedList<String>();
-    folderList.add(path);
-    ArrayList<File> fileList = new ArrayList<File>();
+    public static List<File> listAllFiles(String path)
+    {
+        LinkedList<String> folderList = new LinkedList<String>();
+        folderList.add(path);
+        ArrayList<File> fileList = new ArrayList<File>();
 
-    while (folderList.size() > 0) {
-      File file = new File((String)folderList.poll());
-      File[] files = file.listFiles();
-      for (int i = 0; i < files.length; i++) {
-        if (files[i].isDirectory())
-          folderList.add(files[i].getPath());
-        else {
-          fileList.add((File) files[i]);
+        while (folderList.size() > 0)
+        {
+            File file = new File((String) folderList.poll());
+            File[] files = file.listFiles();
+            for (int i = 0; i < files.length; i++)
+            {
+                if (files[i].isDirectory())
+                    folderList.add(files[i].getPath());
+                else
+                {
+                    fileList.add((File) files[i]);
+                }
+            }
         }
-      }
+        return fileList;
     }
-    return fileList;
-  }
-
-  public static void main(String[] args) {
-    String path = "E://RepositoryMaven//ant";
-    List<File> fileList = listAllFiles(path);
-    Comparator<File> fileSizeComparator = new FileSizeComparator();
-    
-    Collections.sort(fileList,fileSizeComparator);
-    for(int i = 0;i<10;i++)
-        System.out.println(fileList.get(i).getName() + ":" +fileList.get(i).length());
-  }
 }
