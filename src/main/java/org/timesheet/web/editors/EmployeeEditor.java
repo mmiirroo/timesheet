@@ -1,7 +1,7 @@
 package org.timesheet.web.editors;
 
+import org.timesheet.dao.EmployeeDao;
 import org.timesheet.domain.Employee;
-import org.timesheet.service.dao.EmployeeDao;
 
 import java.beans.PropertyEditorSupport;
 

@@ -1,7 +1,6 @@
-package org.timesheet.service.dao;
+package org.timesheet.dao;
 
 import org.timesheet.domain.Task;
-import org.timesheet.service.GenericDao;
 
 /**
  * DAO of Task.

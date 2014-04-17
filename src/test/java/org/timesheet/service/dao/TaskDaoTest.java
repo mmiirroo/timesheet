@@ -2,6 +2,9 @@ package org.timesheet.service.dao;
 
 import org.junit.Test;
 import org.timesheet.DomainAwareBase;
+import org.timesheet.dao.EmployeeDao;
+import org.timesheet.dao.ManagerDao;
+import org.timesheet.dao.TaskDao;
 import org.timesheet.domain.Employee;
 import org.timesheet.domain.Manager;
 import org.timesheet.domain.Task;

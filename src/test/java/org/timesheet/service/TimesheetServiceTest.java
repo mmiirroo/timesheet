@@ -6,11 +6,11 @@ import org.junit.Test;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.test.jdbc.JdbcTestUtils;
 import org.timesheet.DomainAwareBase;
+import org.timesheet.dao.EmployeeDao;
+import org.timesheet.dao.ManagerDao;
 import org.timesheet.domain.Employee;
 import org.timesheet.domain.Manager;
 import org.timesheet.domain.Task;
-import org.timesheet.service.dao.EmployeeDao;
-import org.timesheet.service.dao.ManagerDao;
 
 import javax.annotation.Resource;
 

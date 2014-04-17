@@ -8,12 +8,12 @@ import org.springframework.ui.ExtendedModelMap;
 import org.springframework.ui.Model;
 import org.springframework.web.servlet.ModelAndView;
 import org.timesheet.DomainAwareBase;
+import org.timesheet.dao.EmployeeDao;
+import org.timesheet.dao.ManagerDao;
+import org.timesheet.dao.TaskDao;
 import org.timesheet.domain.Employee;
 import org.timesheet.domain.Manager;
 import org.timesheet.domain.Task;
-import org.timesheet.service.dao.EmployeeDao;
-import org.timesheet.service.dao.ManagerDao;
-import org.timesheet.service.dao.TaskDao;
 import org.timesheet.web.exceptions.TaskDeleteException;
 
 import javax.annotation.Resource;

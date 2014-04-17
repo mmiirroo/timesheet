@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.timesheet.dao.EmployeeDao;
+import org.timesheet.dao.ManagerDao;
 import org.timesheet.domain.Employee;
 import org.timesheet.domain.Manager;
 import org.timesheet.domain.Task;
 import org.timesheet.service.TimesheetService;
-import org.timesheet.service.dao.EmployeeDao;
-import org.timesheet.service.dao.ManagerDao;
 import org.timesheet.web.editors.EmployeeEditor;
 import org.timesheet.web.editors.ManagerEditor;
 

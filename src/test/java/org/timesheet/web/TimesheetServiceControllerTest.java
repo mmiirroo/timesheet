@@ -9,11 +9,11 @@ import org.springframework.test.jdbc.JdbcTestUtils;
 import org.springframework.ui.ExtendedModelMap;
 import org.springframework.ui.Model;
 import org.timesheet.DomainAwareBase;
+import org.timesheet.dao.EmployeeDao;
+import org.timesheet.dao.ManagerDao;
 import org.timesheet.domain.Employee;
 import org.timesheet.domain.Manager;
 import org.timesheet.service.TimesheetService;
-import org.timesheet.service.dao.EmployeeDao;
-import org.timesheet.service.dao.ManagerDao;
 
 import javax.annotation.Resource;
 

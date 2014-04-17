@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.timesheet.dao.EmployeeDao;
 import org.timesheet.domain.Employee;
-import org.timesheet.service.dao.EmployeeDao;
 import org.timesheet.web.exceptions.EmployeeDeleteException;
 
 import javax.annotation.Resource;

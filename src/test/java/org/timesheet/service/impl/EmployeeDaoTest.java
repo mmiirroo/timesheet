@@ -2,8 +2,9 @@ package org.timesheet.service.impl;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.timesheet.dao.GenericDao;
+import org.timesheet.dao.InMemoryDao;
 import org.timesheet.domain.Employee;
-import org.timesheet.service.GenericDao;
 
 import java.util.List;
 

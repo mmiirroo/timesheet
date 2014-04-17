@@ -1,4 +1,4 @@
-package org.timesheet.service;
+package org.timesheet.dao;
 
 import java.util.List;
 

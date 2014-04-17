@@ -8,8 +8,8 @@ import org.springframework.ui.ExtendedModelMap;
 import org.springframework.ui.Model;
 import org.springframework.web.servlet.ModelAndView;
 import org.timesheet.DomainAwareBase;
+import org.timesheet.dao.ManagerDao;
 import org.timesheet.domain.Manager;
-import org.timesheet.service.dao.ManagerDao;
 import org.timesheet.web.exceptions.ManagerDeleteException;
 
 import javax.annotation.Resource;

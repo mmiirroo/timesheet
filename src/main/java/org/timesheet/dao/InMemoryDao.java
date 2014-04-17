@@ -1,6 +1,5 @@
-package org.timesheet.service.impl;
+package org.timesheet.dao;
 
-import org.timesheet.service.GenericDao;
 
 import java.util.ArrayList;
 import java.util.List;

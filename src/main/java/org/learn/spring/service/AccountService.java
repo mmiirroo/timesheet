@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 @Service(value = "accountService")
 public class AccountService {
-    private static final Log LOG = LogFactory.getLog(AccountService.class);
+    protected final Log LOG = LogFactory.getLog(getClass());
 
     @Resource
     private AccountDao accountDao;

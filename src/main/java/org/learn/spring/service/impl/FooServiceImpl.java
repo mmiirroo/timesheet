@@ -19,7 +19,7 @@ public class FooServiceImpl implements FooService {
         this.accountMapper = userMapper;
     }
 
-    public Account doSomeBusinessStuff(String userId) {
+    public Account doSomeBusinessStuff(Long userId) {
         return this.accountMapper.getAccount(userId);
     }
 }

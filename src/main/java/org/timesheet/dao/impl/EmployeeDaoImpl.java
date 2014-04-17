@@ -1,9 +1,10 @@
-package org.timesheet.service.impl;
+package org.timesheet.dao.impl;
 
 import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
+import org.timesheet.dao.EmployeeDao;
+import org.timesheet.dao.HibernateDao;
 import org.timesheet.domain.Employee;
-import org.timesheet.service.dao.EmployeeDao;
 
 @Repository("employeeDao")
 public class EmployeeDaoImpl extends HibernateDao<Employee, Long> implements EmployeeDao {

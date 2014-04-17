@@ -1,10 +1,9 @@
-package org.timesheet.service.impl;
+package org.timesheet.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import org.timesheet.service.GenericDao;
 
 import javax.annotation.Resource;
 import java.io.Serializable;

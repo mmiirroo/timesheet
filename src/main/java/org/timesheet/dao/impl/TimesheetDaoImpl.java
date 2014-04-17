@@ -1,9 +1,10 @@
-package org.timesheet.service.impl;
+package org.timesheet.dao.impl;
 
 import org.hibernate.Criteria;
 import org.springframework.stereotype.Repository;
+import org.timesheet.dao.HibernateDao;
+import org.timesheet.dao.TimesheetDao;
 import org.timesheet.domain.Timesheet;
-import org.timesheet.service.dao.TimesheetDao;
 
 import java.util.List;
 

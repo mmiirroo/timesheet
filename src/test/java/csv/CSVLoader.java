@@ -2,7 +2,6 @@
  * copyright (C) 2006-2014 the original author or authors.
 
  * date: 2014-4-12
- * description: 
  */
 
 package csv;
@@ -74,7 +73,7 @@ public class CSVLoader {
             ps = con.prepareStatement(insertDML);
             
             if(truncateBeforeLoad) {
-                con.createStatement().execute("DELETE FROM" + tableName);
+                con.createStatement().execute("DELETE FROM " + tableName);
             }
             
             final int batchSize = 1000;

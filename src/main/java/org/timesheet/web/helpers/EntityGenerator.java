@@ -1,13 +1,13 @@
 package org.timesheet.web.helpers;
 
 import org.springframework.stereotype.Service;
+import org.timesheet.dao.EmployeeDao;
+import org.timesheet.dao.GenericDao;
+import org.timesheet.dao.ManagerDao;
+import org.timesheet.dao.TaskDao;
+import org.timesheet.dao.TimesheetDao;
 import org.timesheet.domain.Employee;
 import org.timesheet.domain.Manager;
-import org.timesheet.service.GenericDao;
-import org.timesheet.service.dao.EmployeeDao;
-import org.timesheet.service.dao.ManagerDao;
-import org.timesheet.service.dao.TaskDao;
-import org.timesheet.service.dao.TimesheetDao;
 
 import javax.annotation.Resource;
 import java.util.List;

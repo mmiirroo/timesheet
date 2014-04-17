@@ -6,11 +6,11 @@ import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import org.timesheet.dao.TaskDao;
 import org.timesheet.domain.Employee;
 import org.timesheet.domain.Manager;
 import org.timesheet.domain.Task;
 import org.timesheet.service.TimesheetService;
-import org.timesheet.service.dao.TaskDao;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
