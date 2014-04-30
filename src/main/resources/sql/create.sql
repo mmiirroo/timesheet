@@ -9,9 +9,9 @@ ENGINE=InnoDB;
 
 CREATE TABLE `account` (
     `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
-    `age` int NULL DEFAULT 0,
-    `sex` VARCHAR(4) NULL DEFAULT '',
-    `name` VARCHAR(255) NULL DEFAULT NULL,
+    `age` int NOT NULL DEFAULT 0,
+    `sex` VARCHAR(4) NOT NULL DEFAULT '',
+    `name` VARCHAR(255) NOT NULL DEFAULT '',
     PRIMARY KEY (`id`)
 )
 CHARSET='utf8'

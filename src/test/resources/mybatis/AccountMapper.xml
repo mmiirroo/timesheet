@@ -21,6 +21,11 @@
         from account 
         where id = #{accountId}
     </select>
-        
+
+    <select id="selectAll" resultMap="account">
+        select 
+        <include refid="base_Column_List" />
+        from account 
+    </select>        
 </mapper>
 

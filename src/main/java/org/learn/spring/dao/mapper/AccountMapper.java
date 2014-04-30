@@ -7,10 +7,14 @@
 
 package org.learn.spring.dao.mapper;
 
+import java.util.List;
+
 import org.learn.spring.domain.Account;
 
 public interface AccountMapper {
 //    @Select("SELECT * FROM account WHERE id = #{accountId}")
 //    Account getAccount(@Param("accountId") Long accountId );
     Account getAccount(Long accountId);
+
+    List<Account> selectAll();
 }

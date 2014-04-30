@@ -9,6 +9,7 @@ package mybatis;
 import org.junit.Assert;
 import org.junit.Test;
 import org.learn.spring.dao.mapper.AccountMapper;
+import org.learn.spring.domain.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
@@ -21,6 +22,7 @@ public class TestAccountMapper extends AbstractJUnit4SpringContextTests {
 
     @Test
     public void testGetAccount() {
-        Assert.assertNotNull(accountMapper.getAccount(300L));
+        Account account = accountMapper.getAccount(300L);
+        Assert.assertNotNull(account);
     }
 }
