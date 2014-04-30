@@ -41,29 +41,33 @@
             <props>
                 <!-- Defines the SQL dialect used in Hiberante's application -->
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
-
                 <!-- JDBC connection pool, use Hibernate internal connection pool -->
                 <prop key="connection.pool_size">25</prop>
-
                 <!-- Enable Hibernate's automatic session context management -->
                 <prop key="current_session_context_class">thread</prop>
-
                 <!-- Disable the second-level cache  -->
                 <prop key="cache.provider_class">org.hibernate.cache.NoCacheProvider</prop>
-
                 <!-- Display and format all executed SQL to stdout -->
                 <prop key="show_sql">true</prop>
                 <prop key="format_sql">true</prop>
-
                 <!-- Drop and re-create the database schema on startup -->
                 <prop key="hbm2ddl.auto">none</prop>
             </props>
         </property>
         <!--
-
             <property name="configLocation" value="classpath:hibernate.cfg.xml"/>
         -->
     </bean>
+    
+    <context:component-scan base-package="org.timesheet"
+        use-default-filters="false">
+        <context:include-filter type="annotation"
+            expression="org.springframework.stereotype.Controller" />
+        <context:include-filter type="annotation"
+            expression="org.springframework.stereotype.Service" />
+        <context:include-filter type="annotation"
+            expression="org.springframework.stereotype.Repository" />
+    </context:component-scan>
 
     <bean id="transactionManager"
           class="org.springframework.orm.hibernate4.HibernateTransactionManager">
