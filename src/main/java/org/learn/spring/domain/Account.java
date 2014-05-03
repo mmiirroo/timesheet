@@ -13,8 +13,13 @@ public class Account {
     private String name;
     private int age;
     private String sex;
+    private String password;
 
     public Account() {
+    }
+    
+    public Account(String name) {
+        this.name = name;
     }
 
     public Account(int id, String name, int age, String sex) {
@@ -70,4 +75,12 @@ public class Account {
     public void setSex(String sex) {
         this.sex = sex;
     }
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 }
