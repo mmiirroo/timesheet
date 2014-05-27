@@ -8,6 +8,7 @@
 package csv;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -21,7 +22,10 @@ import org.dom4j.io.SAXReader;
 import org.dom4j.io.XMLWriter;
 import org.junit.Test;
 
+import au.com.bytecode.opencsv.CSVParser;
 import au.com.bytecode.opencsv.CSVReader;
+import au.com.bytecode.opencsv.bean.ColumnPositionMappingStrategy;
+import au.com.bytecode.opencsv.bean.CsvToBean;
 
 public class TestOpencsvReadWrite {
 
@@ -38,6 +42,22 @@ public class TestOpencsvReadWrite {
         csvReader.close();
     }
 
+    @Test
+    public void testCsvToBean() throws FileNotFoundException {
+        ColumnPositionMappingStrategy<Country> strat = new ColumnPositionMappingStrategy<Country>();
+        strat.setType(Country.class);
+        String[] columns = new String[]{"countryName","capital"};
+        strat.setColumnMapping(columns);
+        CsvToBean<Country> csv = new CsvToBean<Country>();
+        String csvFileName = TestOpencsvReadWrite.class.getResource("sample.csv").getFile();
+        CSVReader csvReader = new CSVReader(new FileReader(csvFileName), CSVParser.DEFAULT_SEPARATOR, CSVParser.DEFAULT_QUOTE_CHARACTER, CSVParser.DEFAULT_ESCAPE_CHARACTER, 1);
+
+        List<Country> list = csv.parse(strat, csvReader);
+        for(Country object:list) {
+            System.out.println(object);
+        }
+    }
+    
     @Test
     public void testParseXml() throws DocumentException {
         File xmlFile = new File(TestOpencsvReadWrite.class.getResource("sample.xml").getFile());

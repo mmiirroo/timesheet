@@ -2,4 +2,5 @@
 
 <purchase_import_temp_detail>
     <field property="airlineId" column="airline_id" />
+    <field property="vendorId" column="vendor_id" />
 </purchase_import_temp_detail>  
