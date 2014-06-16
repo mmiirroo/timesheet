@@ -1,5 +1,14 @@
 package org.timesheet.service.dao;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
+import java.util.Arrays;
+import java.util.List;
+
+import javax.annotation.Resource;
+
 import org.junit.Test;
 import org.timesheet.DomainAwareBase;
 import org.timesheet.dao.EmployeeDao;
@@ -10,12 +19,6 @@ import org.timesheet.domain.Employee;
 import org.timesheet.domain.Manager;
 import org.timesheet.domain.Task;
 import org.timesheet.domain.Timesheet;
-
-import javax.annotation.Resource;
-import java.util.Arrays;
-import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * Created with IntelliJ IDEA.

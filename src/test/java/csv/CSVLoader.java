@@ -15,7 +15,7 @@ import java.util.Date;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.timesheet.DateUtil;
+import org.timesheet.util.DateUtil;
 
 import au.com.bytecode.opencsv.CSVReader;
 

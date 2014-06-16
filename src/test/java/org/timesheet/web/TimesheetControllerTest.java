@@ -1,5 +1,16 @@
 package org.timesheet.web;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+import java.util.Collection;
+import java.util.List;
+
+import javax.annotation.Resource;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.context.ContextConfiguration;
@@ -16,14 +27,6 @@ import org.timesheet.domain.Manager;
 import org.timesheet.domain.Task;
 import org.timesheet.domain.Timesheet;
 import org.timesheet.web.commands.TimesheetCommand;
-
-import javax.annotation.Resource;
-import java.util.Collection;
-import java.util.List;
-
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 /**
  * User: seiyaa

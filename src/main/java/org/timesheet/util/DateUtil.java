@@ -5,7 +5,7 @@
  * description: 
  */
 
-package org.timesheet;
+package org.timesheet.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

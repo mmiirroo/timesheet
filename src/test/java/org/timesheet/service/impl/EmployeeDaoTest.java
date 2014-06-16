@@ -1,15 +1,15 @@
 package org.timesheet.service.impl;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.timesheet.dao.GenericDao;
 import org.timesheet.dao.InMemoryDao;
 import org.timesheet.domain.Employee;
-
-import java.util.List;
-
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
 
 public class EmployeeDaoTest {
     private GenericDao<Employee, Long> employeeDao = new InMemoryDao<Employee, Long>();

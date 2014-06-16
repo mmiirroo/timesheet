@@ -1,5 +1,9 @@
 package org.timesheet.web;
 
+import static org.junit.Assert.assertEquals;
+
+import javax.annotation.Resource;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.core.io.FileSystemResource;
@@ -14,10 +18,6 @@ import org.timesheet.dao.ManagerDao;
 import org.timesheet.domain.Employee;
 import org.timesheet.domain.Manager;
 import org.timesheet.service.TimesheetService;
-
-import javax.annotation.Resource;
-
-import static org.junit.Assert.assertEquals;
 
 /**
  * User: seiyaa

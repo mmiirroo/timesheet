@@ -1,5 +1,16 @@
 package org.timesheet.web;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+import java.util.Collection;
+import java.util.List;
+
+import javax.annotation.Resource;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,14 +22,6 @@ import org.timesheet.DomainAwareBase;
 import org.timesheet.dao.ManagerDao;
 import org.timesheet.domain.Manager;
 import org.timesheet.web.exceptions.ManagerDeleteException;
-
-import javax.annotation.Resource;
-import java.util.Collection;
-import java.util.List;
-
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 @ContextConfiguration(locations = {"/persistence-beans.xml", "/controllers.xml"})
 public class TestManagerController extends DomainAwareBase {

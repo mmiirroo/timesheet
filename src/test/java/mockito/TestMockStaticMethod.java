@@ -39,7 +39,6 @@ public class TestMockStaticMethod{
     public void testCallSystemStaticMethod() {
         Assert.assertNotNull(timesheetService);
         
-        
         ClassUnderTest underTest = new ClassUnderTest();
         PowerMockito.mockStatic(System.class);
         PowerMockito.when(System.getProperty("aaa")).thenReturn("bbb");

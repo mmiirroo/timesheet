@@ -8,7 +8,7 @@ import java.util.Scanner;
  * date: 2014-5-27
  */
 
-public class Testfactorial {
+public class TestFactorial {
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         int input = cin.nextInt();
@@ -32,15 +32,14 @@ public class Testfactorial {
         return fiveFactors;
     }
 
-    public static synchronized BigInteger bigNumber(int num) {//利用BigInteger类计算阶乘
-
-        ArrayList<BigInteger> list = new ArrayList<BigInteger>();//创建集合数组
-        list.add(BigInteger.valueOf(1));//往数组里添加一个数值
+    public static synchronized BigInteger bigNumber(int num) {
+        ArrayList<BigInteger> list = new ArrayList<BigInteger>();
+        list.add(BigInteger.valueOf(1));
         for (int i = list.size(); i <= num; i++) {
-            BigInteger lastfact = (BigInteger) list.get(i - 1);//获得第一个元素
-            BigInteger nextfact = lastfact.multiply(BigInteger.valueOf(i));//获得下一个数组
+            BigInteger lastfact = (BigInteger) list.get(i - 1);
+            BigInteger nextfact = lastfact.multiply(BigInteger.valueOf(i));
             list.add(nextfact);
         }
-        return (BigInteger) list.get(num);//返回数组中的下标为num的值
+        return list.get(num);
     }
 }

@@ -1,8 +1,8 @@
 package org.learn.spring.cacheofAnno;
 
 import org.learn.spring.domain.Account;
-import org.springframework.context.ApplicationContext; 
-import org.springframework.context.support.ClassPathXmlApplicationContext; 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestAccountService { 
   public static void main(String[] args) { 

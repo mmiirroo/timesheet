@@ -1,13 +1,13 @@
 package org.timesheet;
 
+import javax.annotation.Resource;
+
 import org.junit.Before;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 import org.springframework.test.jdbc.JdbcTestUtils;
-
-import javax.annotation.Resource;
 
 @ContextConfiguration(locations = "classpath*:persistence-beans.xml")
 public abstract class DomainAwareBase extends AbstractJUnit4SpringContextTests {

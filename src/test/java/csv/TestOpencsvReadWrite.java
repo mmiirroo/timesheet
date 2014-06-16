@@ -7,11 +7,15 @@
 
 package csv;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.List;
 
 import org.dom4j.Document;
@@ -31,8 +35,14 @@ public class TestOpencsvReadWrite {
 
     @Test
     public void testCsvRead() throws IOException {
-        String csvFileName = TestOpencsvReadWrite.class.getResource("sample.csv").getFile();
-        CSVReader csvReader = new CSVReader(new FileReader(csvFileName));
+//        String csvFileName = TestOpencsvReadWrite.class.getResource("sample.csv").getFile();
+//        CSVReader csvReader = new CSVReader(new FileReader(csvFileName));
+
+        URL url = new URL("http://public-api.nj.pla.tuniu.org/filebroker/cdn/prd/cf/5b/cf5b239a4113dd0b86e31c2fd249739a.csv");
+        URLConnection conn = url.openConnection();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+        
+        CSVReader csvReader = new CSVReader(reader);
         List<String[]> content = csvReader.readAll();
 
         for (String[] row : content) {
