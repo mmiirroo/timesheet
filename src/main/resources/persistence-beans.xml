@@ -88,6 +88,12 @@
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
     
+    <bean id="application" class="org.learn.spring.oxm.Application">
+        <property name="marshaller" ref="castorMarshaller" />
+        <property name="unmarshaller" ref="castorMarshaller" />
+    </bean>
+    <bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller"/>
+    
     <!--     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource" />
     </bean>

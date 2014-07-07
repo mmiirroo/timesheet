@@ -95,4 +95,16 @@ public class TestConcurrentHashMap {
         }
 
     }
+    
+    @Test
+    public void testShift(){
+        int sshift = 0; 
+        int ssize = 1; 
+        while(ssize < 3) { 
+            ++sshift; 
+            ssize <<= 1; 
+        } 
+        System.out.println("ssize:"+ssize);
+        System.out.println("sshift:"+sshift);      
+    }
 }

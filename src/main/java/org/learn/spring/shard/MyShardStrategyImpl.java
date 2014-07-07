@@ -1,13 +1,13 @@
 package org.learn.spring.shard;
 
-import com.google.code.shardbatis.strategy.ShardStrategy;
+//import com.google.code.shardbatis.strategy.ShardStrategy;
 
 /**
  * 分表策略接口
  * @author sean.he
  *
  */
-public class MyShardStrategyImpl implements ShardStrategy  {
+public class MyShardStrategyImpl { //implements ShardStrategy  {
         /**
          * 得到实际表名
          * @param baseTableName 逻辑表名,一般是没有前缀或者是后缀的表名
