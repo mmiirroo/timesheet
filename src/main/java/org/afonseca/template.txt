@@ -1,0 +1,6 @@
+template< typename Return, typename Parameter>
+class CallBack: public std::unary_function< Return, Parameter > {
+	public:
+	virtual Return operator()(Parameter parameter)=0;
+	virtual ~CallBack(){}
+};

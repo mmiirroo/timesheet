@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring_version>3.2.5.RELEASE</spring_version>
         <hibernate_version>4.2.7.Final</hibernate_version>
-        <aspectj_version>1.7.4</aspectj_version>
+        <aspectj_version>1.7.3</aspectj_version>
         <akka_version>2.3.2</akka_version>
         <powermock.version>1.4.10</powermock.version>
     </properties>
@@ -196,7 +196,7 @@
         <dependency>
             <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
-            <version>1.0.2</version>
+            <version>1.1.1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -238,7 +238,7 @@
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
-            <version>1.3.1</version>
+            <version>1.4</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -269,7 +269,18 @@
             <groupId>org.mybatis.caches</groupId>
             <artifactId>mybatis-memcached</artifactId>
             <version>1.0.0-beta1</version>
+            <exclusions>
+            	<exclusion>
+            		<artifactId>spymemcached</artifactId>
+            		<groupId>spy</groupId>
+            	</exclusion>
+            </exclusions>
         </dependency>
+		<dependency>
+			<groupId>com.google.code.simple-spring-memcached</groupId>
+			<artifactId>spymemcached</artifactId>
+			<version>2.8.1</version>
+		</dependency>
 
         <dependency>
             <groupId>com.typesafe.akka</groupId>
